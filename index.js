@@ -25,6 +25,7 @@ app.get('/info', (req, res, next) => {
     res.send('This is a proxy service which proxies to Bleach Server Arduino Device');
 });
 
+app.use('/', express.static('public'))
 
 app.use('/on', (req, res, next) => {
 
